@@ -1,0 +1,250 @@
+/* Font-face declarations */
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url(fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url(fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url(fonts/NeueMontreal-Light.otf);
+}
+
+/* Base styles for html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Title styling */
+.title {
+  color: #38EF7D;
+  width: fit-content;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Navigation bar styles */
+.navigation-bar {
+  border-radius: 20px;
+  background: rgba(22, 29, 45, 0.3);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(100px);
+  max-width: 1200px; /* Allow it to shrink on smaller screens */
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 40px;
+  overflow: hidden;
+}
+
+.navigation-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-bar a {
+  color: #FCFCFC;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  font-family: 'NeueMontreal-Light';
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.navigation-bar a:hover {
+  background-color: rgba(56, 239, 125, 0.3);
+  border-radius: 5px;
+  backdrop-filter: blur(100px);
+}
+
+.navigation-bar li {
+  float: left;
+}
+
+/* Hero section styles */
+.hero-section {
+  border-radius: 20px;
+  background: rgba(22, 29, 45, 0.3);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(100px);
+  border: 1px solid rgba(56, 239, 125, 0.5);
+  max-width: 1200px; /* Allow it to shrink on smaller screens */
+  width: 100%;
+  margin-top: 20px; /* Sets the top margin to 30px */
+  margin-bottom: 50px; /* Sets the bottom margin to 50px */
+  margin-left: auto; /* Centers the element horizontally */
+  margin-right: auto; /* Centers the element horizontally */
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.hp-texts {
+  max-width: 401px;
+  padding-left: 100px;
+  padding-right: 5px;
+}
+
+.image {
+  flex-shrink: 0;
+  padding: 0 100px 0 5px;
+}
+
+.pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+/* Headings */
+h1 {
+  color: #FCFCFC;
+  background: linear-gradient(90deg, #38EF7D, #9FFCEA, #38EF7D);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'NeueMontreal-Bold';
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+
+h2 {
+  color: #FCFCFC;
+  font-family: 'NeueMontreal-Regular';
+  margin: 0;
+}
+
+/* Course and institution styles */
+.course {
+  color: #FCFCFC;
+  font-family: 'NeueMontreal-Regular';
+  margin: 0 0 15px;
+  letter-spacing: 1px;
+}
+
+.institution {
+  font-family: 'NeueMontreal-Light';
+  color: #FCFCFC;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-radius: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #38EF7D, #9FFCEA, #38EF7D);
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Intro text */
+.intro {
+  color: #E0E0E0;
+  font-family: 'NeueMontreal-Light';
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+/* Full-width section */
+.try {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgba(22, 29, 45);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 20px 10px;
+  }
+
+  .navigation-bar li {
+    float: none;
+    text-align: center;
+  }
+
+  .hero-section {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hp-texts,
+  .image {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .pic {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .course {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .course {
+    font-size: 12px;
+  }
+
+  .pic {
+    width: 90%;
+    height: auto;
+  }
+}
