@@ -15,10 +15,8 @@
 }
 
 /* Base styles for html and body */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+body {
+  background: linear-gradient(45deg,  #38EF7D, #161d2d, #161d2d, #38EF7D);
 }
 
 /* Title styling */
@@ -34,18 +32,18 @@ html, body {
 
 /* Navigation bar styles */
 .navigation-bar {
-  border-radius: 20px;
-  background: rgba(22, 29, 45, 0.3);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(15, 23, 44, 0.75);
   backdrop-filter: blur(100px);
-  max-width: 1200px; /* Allow it to shrink on smaller screens */
-  width: 100%;
-  margin: 20px auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 40px;
-  overflow: hidden;
+  justify-content: space-around; /* Distributes contents evenly with space in between */
+  align-items: center; /* Centers content vertically */
 }
 
 .navigation-bar ul {
@@ -58,7 +56,7 @@ html, body {
   color: #FCFCFC;
   text-decoration: none;
   padding: 20px;
-  display: block;
+  display: flex;
   align-content: center;
   text-align: center;
   font-family: 'NeueMontreal-Light';
@@ -67,7 +65,7 @@ html, body {
 }
 
 .navigation-bar a:hover {
-  background-color: rgba(56, 239, 125, 0.3);
+  background-color: rgba(0, 255, 191, 0.3);
   border-radius: 5px;
   backdrop-filter: blur(100px);
 }
@@ -78,17 +76,16 @@ html, body {
 
 /* Hero section styles */
 .hero-section {
-  border-radius: 20px;
-  background: rgba(22, 29, 45, 0.3);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: rgba(5, 30, 34, 0.50);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(100px);
-  border: 1px solid rgba(56, 239, 125, 0.5);
-  max-width: 1200px; /* Allow it to shrink on smaller screens */
-  width: 100%;
-  margin-top: 20px; /* Sets the top margin to 30px */
-  margin-bottom: 50px; /* Sets the bottom margin to 50px */
-  margin-left: auto; /* Centers the element horizontally */
-  margin-right: auto; /* Centers the element horizontally */
+  max-width: 100%; 
+  margin-top: 10px;
+  margin-bottom: 50px; 
+  margin-left: 20px; 
+  margin-right: 20px; 
   padding: 40px;
   display: flex;
   align-items: center;
@@ -200,12 +197,14 @@ hr {
 /* Responsive Design */
 @media (max-width: 768px) {
   .navigation-bar {
-    flex-direction: column; /* Stack navigation items vertically */
-    padding: 20px 10px;
+    flex-direction: row; /* Stack navigation items vertically */
+    padding: 10px 10px;
+    margin: 20px;
+    max-width: 100%;
   }
 
   .navigation-bar li {
-    float: none;
+    float: left;
     text-align: center;
   }
 
@@ -214,6 +213,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
   }
 
   .hp-texts,
@@ -229,11 +229,11 @@ hr {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .course {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
