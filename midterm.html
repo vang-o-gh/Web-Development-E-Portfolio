@@ -17,24 +17,89 @@
       </ul>
     </div>
     <section class="hero-section">
-      <div class="hp-texts">
-        <h1>
-          MIDTERM
+      <div class="midterm-quizzes" onclick="openQuizzesPopup()">
+        <h1 class="midterm-quizzes-label">
+          MIDTERM QUIZZES
         </h1>
-        <h2 class="course">
-          Web Development
-        </h2>
-        <p class="institution">
-          Polytechnic University of the Philippines
-        </p>
-        <hr>
-        <p class="intro">
-          Welcome to my E-Portfolio! This site showcases my academic journey, including quizzes, activities, and reflections from the Midterm and Final periods. Explore my learning process, growth, and key highlights.  Dive in to see how my skills have developed through each phase of my coursework.
-        </p>
+        <img class="midterm-quizzes-logo" src="images/midterm-quizzes.png">
       </div>
-      <div class="image">
-        <img class="bg" src="images/background.png">
+      <div class="midterm-activities" onclick="openActivitiesPopup()">
+        <h1 class="midterm-activities-label">
+          MIDTERM ACTIVITIES
+        </h1>
+        <img class="midterm-activities-logo" src="images/midterm-activities.png">
       </div>
+      <div class="midterm-exam" onclick="openExamPopup()">
+        <h1 class="midterm-exam-label">
+          MIDTERM EXAM
+        </h1>
+        <img class="midterm-exam-logo" src="images/midterm-exam.png">
+      </div>
+      
     </section>
+  
+    <div class="overlay" id="overlay"></div>
+
+    <div class="midterm-quizzes-popup" id="midterm-quizzes-popup">
+      <div class="popup-div">
+        <div class="quizzes-div">
+          <h1>Midterm Quizzes</h1>
+          <img src="images/midterm-quizzes.png">
+        </div>
+        <div class="quizzes-div">
+          <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="midterm-activities-popup" id="midterm-activities-popup">
+      <div class="popup-div">
+        <div class="activities-div">
+          <h1>Midterm Activities</h1>
+          <img src="images/midterm-activities.png">
+        </div>
+        <div class="activities-div">
+          <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="midterm-exam-popup" id="midterm-exam-popup">
+      <div class="popup-div">
+        <div class="exam-div">
+          <h1>Midterm Exam</h1>
+          <img src="images/midterm-exam.png">
+        </div>
+        <div class="exam-div">
+          <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function openQuizzesPopup() {
+        document.getElementById('midterm-quizzes-popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+
+      function openActivitiesPopup() {
+        document.getElementById('midterm-activities-popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+
+      function openExamPopup() {
+        document.getElementById('midterm-exam-popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('midterm-quizzes-popup').style.display = 'none';
+        document.getElementById('midterm-activities-popup').style.display = 'none';
+        document.getElementById('midterm-exam-popup').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+
+    </script>
   </body>
 </html>
