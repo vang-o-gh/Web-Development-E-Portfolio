@@ -8,15 +8,27 @@
   </head>
   <body>
     <div class="navigation-bar">
-   
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="midterm.html">Midterm</a></li>
+        <li><a href="midterm.html" style="background-color:  rgba(108, 255, 147, 0.3); border-radius: 5px;">Midterm</a></li>
         <li><a href="finals.html">Finals</a></li>
         <li><a href="contacts.html">Contacts</a></li>
       </ul>
     </div>
-    <section class="hero-section">
+    <section class="midterm-description" style="background: none; backdrop-filter: none; box-shadow: none; margin-top: 50px; margin-bottom: 50px; place-content: center;">
+      <div style="max-width: 100%; margin-left: 50px; margin-right: 50px;">
+        <h1>
+          Welcome to My Midterm Journey!
+        </h1>
+      </div>
+      <div style="width: 100%;">
+        <hr>
+        <p class="intro">
+          The midterm period is a milestone in my learning journey, packed with challenges, growth, and discovery. This page showcases a curated collection of my quizzes, activities, and exam reflections. You'll find thought-provoking questions paired with answers and explanations that dive into the "why" behind the solutions. My activities section brings the creative process to life with detailed screenshots, multimedia components, and visual representations of my efforts. Lastly, my midterm exam reflections highlight the lessons I’ve learned, the hurdles I’ve overcome, and how these experiences have shaped my understanding and skills. Join me as I take you through this exciting chapter of my academic progress!
+        </p>
+      </div>
+    </section>
+    <section class="hero-section" style="border-radius: 20px;">
       <div class="midterm-quizzes" onclick="openQuizzesPopup()">
         <h1 class="midterm-quizzes-label">
           MIDTERM QUIZZES
@@ -38,7 +50,7 @@
       
     </section>
   
-    <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
 
     <div class="midterm-quizzes-popup" id="midterm-quizzes-popup">
       <div class="popup-div">
@@ -135,16 +147,19 @@
       function openQuizzesPopup() {
         document.getElementById('midterm-quizzes-popup').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
+        document.body.style.overflow = 'hidden';
       }
 
       function openActivitiesPopup() {
         document.getElementById('midterm-activities-popup').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
+        document.body.style.overflow = 'hidden';
       }
 
       function openExamPopup() {
         document.getElementById('midterm-exam-popup').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
+        document.body.style.overflow = 'hidden';
       }
 
       function closePopup() {
@@ -152,6 +167,7 @@
         document.getElementById('midterm-activities-popup').style.display = 'none';
         document.getElementById('midterm-exam-popup').style.display = 'none';
         document.getElementById('overlay').style.display = 'none';
+        document.body.style.overflow = '';
       }
 
     </script>
