@@ -28,24 +28,106 @@
       </div>
     </section>
     <section class="hero-section" style="border-radius: 20px;">
-      <div class="hp-texts">
-        <h1>
-          FINALS
+      <div class="finals-quizzes" onclick="openFinalsPopup()">
+        <h1 class="finals-quizzes-label" style="text-align: center;">
+          FINALS QUIZZES
         </h1>
-        <h2 class="course">
-          Web Development
-        </h2>
-        <p class="institution">
-          Polytechnic University of the Philippines
-        </p>
-        <hr>
-        <p class="intro">
-          Welcome to my E-Portfolio! This site showcases my academic journey, including quizzes, activities, and reflections from the Midterm and Final periods. Explore my learning process, growth, and key highlights.  Dive in to see how my skills have developed through each phase of my coursework.
-        </p>
+        <img class="midterm-quizzes-logo" src="images/midterm-quizzes.png">
       </div>
-      <div class="image">
-        <img class="bg" src="images/background.png">
+      <div class="finals-exam" onclick="openExamPopup()">
+        <h1 class="finals-exam-label" style="text-align: center;">
+          FINALS EXAM
+        </h1>
+        <img class="midterm-activities-logo" src="images/midterm-activities.png">
       </div>
     </section>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <div class="finals-quizzes-popup" id="finals-quizzes-popup">
+      <div class="popup-div">
+        <div class="quizzes-div-left">
+          <div class="midterm-quizzes-carousel">
+            <img src="images/midterm-quizzes/1.png" class="quiz-pic">
+            <img src="images/midterm-quizzes/2.png" class="quiz-pic">
+            <img src="images/midterm-quizzes/3.png" class="quiz-pic">
+            <img src="images/midterm-quizzes/4.png" class="quiz-pic">
+          </div>
+        </div>
+        <div class="quizzes-div-right">
+          <div class="midterm-quizzes-paragraph">
+            <h1>Finals Quizzes</h1>
+            <hr>
+            <p>
+              Reflecting on my quizzes in web development, I can confidently say this journey has been both hard and rewarding. The fundamental topics covered were the introduction to the internet, a comparison of the internet and the intranet, basic HTML tags, CSS, and Bootstrap, which are important building blocks in web development. Learning about the internet enabled me to see it as a network that connects individuals, information, and services from all over the world. Understanding the concept of intranets made me realize the importance of having private networks for businesses and organizations, which securely enable communication between them. This comparison was brought to mind when I was trying to set up a small home network for practice, and I could not determine how private and public networks work. Going through the concept again in the quizzes helped me understand how it works and its real-world application.<br><br>
+              HTML tags are another important topic that was used to test my knowledge of page structure. I recall my first simple webpage created in HTML: a basic layout, but what an achievement it was to see something that I had coded on the screen. Those quizzes reminded me of the good old times and underlined how essential proper tagging was in structuring content. Adding creativity and problem-solving to learning came through CSS. Styling web pages and playing around with layouts, colors, and fonts made me realize how much design impacts the user experience. I remember a personal project where I was having trouble aligning elements on a page; learning about CSS flexbox and grids during these quizzes helped me address those challenges and made me feel more capable of tackling similar issues in the future.<br><br>
+              Bootstrap was a topic that especially resonated with me. I had difficulty creating responsive websites that looked good on both desktop and mobile devices before knowing it. Bootstrap's predesigned components and its grid system made this rather easy for me to do, so I could design my pages to look professional in the end. I had a project where I did a mobile-friendly navigation bar by using Bootstrap, and how efficiently it worked was satisfying. These quizzes both checked my existing knowledge as well as called for my own reflection to ponder about how I had evolved from a rookie web developer into a certain web development engineer.<br><br>
+              Overall, these quizzes have been a valuable part of my learning experience. They didn’t just help me test my knowledge but also reminded me of my progress and achievements in web development. From understanding networks to designing responsive and visually appealing web pages, I’ve gained skills and confidence that motivate me to keep learning and improving. These experiences remind me that every step, no matter how small, contributes to my growth as a developer.
+            </p>
+          </div>
+          <div class="close-button-div">
+            <button class="close-button" onclick="closePopup()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="finals-exam-popup" id="finals-exam-popup">
+      <div class="popup-div">
+        <div class="activities-div-left">
+          <div class="midterm-activities-carousel">
+            <img src="images/midterm-activities/1.png" class="activities-pic">
+            <img src="images/midterm-activities/2.png" class="activities-pic">
+            <img src="images/midterm-activities/3.png" class="activities-pic">
+            <img src="images/midterm-activities/4.png" class="activities-pic">
+            <img src="images/midterm-activities/4.png" class="activities-pic">
+            <img src="images/midterm-activities/5.png" class="activities-pic">
+            <img src="images/midterm-activities/6.png" class="activities-pic">
+            <img src="images/midterm-activities/7.png" class="activities-pic">
+            <img src="images/midterm-activities/8.png" class="activities-pic">
+          </div>
+        </div>
+        <div class="activities-div-right">
+          <div class="midterm-activities-paragraph">
+            <h1>Finals Exam</h1>
+            <hr>
+            <p>
+              I realize how much I have learned and grown in web development by doing the activities and projects. Each activity has been a stepping stone for me in developing my skills, creativity, and understanding of how websites work. One of the first activities was creating an "About Me" poster, where I could let my personality shine through while practicing design principles. This small but significant task taught me how visual elements and text coherently contribute to pass messages-they are a critical thing in web design.<br><br>
+              I particularly liked working on individual web pages of three Philippine holidays. Using HTML text, images, and attributes, I learned how to create visually appealing and informative content. I enjoyed researching holidays and creatively presenting their history and significance. This challenge of properly aligning the text and images helped me learn the importance of proper HTML structure and tags, which formed a good foundation for more advanced projects.<br><br>
+              Creating an ePortfolio while learning CSS was both exciting and challenging. Applying CSS to style my portfolio gave me practical experience in enhancing the look and feel of a website. I tried different layouts, colors, and fonts to ensure that my portfolio was both visually pleasing and professional. This activity improved not only my design skills but also gave me the satisfaction of creating something that could be proudly displayed.<br><br>
+              Learning JavaScript was another big milestone in my journey. Knowing how functions and arrays work together with HTML and CSS added a dynamic layer to my projects. For instance, creating interactive features such as buttons, forms, or simple animations made me appreciate how JavaScript enhances user experience. The case study on web development also allowed me to combine everything I had learned so far. Analyzing and applying web development concepts in a practical scenario helped me understand how the skills I’ve been building come together in real-world projects.<br><br>
+              These activities have been more than just academic exercises—they’ve been opportunities to test my skills, learn from my mistakes, and grow as a web developer. I’ve learned the importance of attention to detail, creativity, and problem-solving. The ability of each project, designing posters or writing JavaScript, made me feel confident and enthusiastic enough to carry on and deepen myself further in web development. This reminds me that anything is important to build upon for whatever technology it may be.
+            </p>
+          </div>
+          <div class="close-button-div">
+            <button class="close-button" onclick="closePopup()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function openFinalsPopup() {
+        document.getElementById('finals-quizzes-popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function openExamPopup() {
+        document.getElementById('finals-exam-popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closePopup() {
+        document.getElementById('finals-quizzes-popup').style.display = 'none';
+        document.getElementById('finals-exam-popup').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+    </script>
+
   </body>
 </html>
