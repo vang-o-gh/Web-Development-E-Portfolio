@@ -17,6 +17,7 @@
 /* Base styles for html and body */
 body {
   background: linear-gradient(45deg,  #38EF7D, #161d2d, #161d2d, #38EF7D);
+  background-repeat: no-repeat;
 }
 
 /* Title styling */
@@ -82,8 +83,7 @@ body {
 .hero-section,
 .midterm-description,
 .finals-description {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   background: rgba(5, 30, 34, 0.50);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(100px);
@@ -375,7 +375,8 @@ hr {
   width: 0;
 }
 
-.close-button-div{
+.close-button-div,
+.switch-to-dbad {
   display: flex;
   justify-content: center;
   padding-top: 15px;
@@ -395,9 +396,28 @@ hr {
   cursor: pointer;
 }
 
+.switch-to-dbad {
+  font-family: 'NeueMontreal-Regular';
+  color: #FCFCFC;
+  height: 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #161d2d, #9638ef5b, #161d2d);
+  padding-left: 25px;
+  padding-right: 25px;
+  border-style: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
 .close-button:hover{
   background: linear-gradient(45deg, #161d2d, #38ef7e, #161d2d);
   box-shadow: 0 0 15px rgba(108, 255, 147, 0.5);
+  transition: background-color 0.5s ease;
+}
+
+.switch-to-dbad:hover{
+  background: linear-gradient(45deg, #161d2d, #7e38ef, #161d2d);
+  box-shadow: 0 0 15px rgba(164, 108, 255, 0.5);
   transition: background-color 0.5s ease;
 }
 
