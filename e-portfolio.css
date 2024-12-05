@@ -192,14 +192,18 @@ hr {
   border-radius: 20px;
   place-items: center;
   cursor: pointer;
+  transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .midterm-quizzes:hover,
 .midterm-activities:hover, 
-.midterm-exam:hover{
+.midterm-exam:hover,
+.finals-quizzes:hover,
+.finals-exam:hover {
   background-color: #00ff622a;
   box-shadow: 0 0 15px rgba(108, 255, 147, 0.5);
   transition: background-color 0.5s ease;
+  transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
   transform: scale(1.02); 
 }
 
