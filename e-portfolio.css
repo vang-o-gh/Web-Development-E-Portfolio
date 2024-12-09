@@ -376,7 +376,8 @@ hr {
 }
 
 .close-button-div,
-.switch-to-dbad {
+.switch-to-dbad-div,
+.contact-me-button-div {
   display: flex;
   justify-content: center;
   padding-top: 15px;
@@ -409,7 +410,21 @@ hr {
   cursor: pointer;
 }
 
-.close-button:hover{
+.contact-me-button {
+  font-family: 'NeueMontreal-Regular';
+  color: #FCFCFC;
+  height: 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #161d2d, #38efb25b, #161d2d);
+  padding-left: 25px;
+  padding-right: 25px;
+  border-style: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.contact-me-button:hover {
   background: linear-gradient(45deg, #161d2d, #38ef7e, #161d2d);
   box-shadow: 0 0 15px rgba(108, 255, 147, 0.5);
   transition: background-color 0.5s ease;
